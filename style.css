@@ -74,4 +74,5 @@ button {
     border: 0;
     padding: 16px;
     border-radius: 16px;
+    cursor: pointer;
 }
