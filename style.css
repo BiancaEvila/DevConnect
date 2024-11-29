@@ -9,33 +9,34 @@ body {
     background-color: #111827; 
     min-height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 8px;
 }
 
 #logo {
-    height: 60vh;
-    width: 30vw;
+    height: 35vh;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 16px;
 }
 
 img {
-    width: 70%;
-    height: 80%;
+    width: 100%;
+    height: auto;
 }
 
 .login-container {
-    /* border: solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25%;
+    width: 90%;
+    max-width: 400px;
     background-color: #374151;
     padding: 30px;
     border-radius: 16px;
@@ -59,12 +60,8 @@ img {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     color: #fff;
     margin-top: 16px;
 
@@ -72,7 +69,7 @@ h1 {
 
 label {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 8px;
     cursor: default;
 }
@@ -81,15 +78,15 @@ input {
     border: 1px solid;
     transition: border-color 0.3s ease;
     background-color: #111827;
-    padding: 16px;
+    padding: 1rem;
     border-radius: 16px;
-    color: #ffffff; /* Define a cor padrão do texto */
-    font-size: 16px;
+    color: #ffffff;
+    font-size: 1rem;
 }
 
 input:-webkit-autofill {
-    -webkit-text-fill-color: #ffffff !important; /* Força a cor do texto no autofill */
-    -webkit-box-shadow: 0 0 0 1000px #111827 inset !important; /* Sobrescreve o fundo */
+    -webkit-text-fill-color: #ffffff !important; 
+    -webkit-box-shadow: 0 0 0 1000px #111827 inset !important;
     box-shadow: 0 0 0 1000px #111827 inset !important;
     transition: background-color 5000s ease-in-out 0s;
     border: 1px solid #ffffff !important;
@@ -97,7 +94,7 @@ input:-webkit-autofill {
 
 
 input::placeholder {
-    color: rgba(255, 255, 255, 0.6); /* Cor branca semitransparente */
+    color: rgba(255, 255, 255, 0.6); 
 }
   
 
@@ -109,9 +106,36 @@ input:focus {
 button {
     background-color: #9333EA;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: 0;
-    padding: 16px;
+    padding: 1rem;
     border-radius: 16px;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #logo {
+        height: 50vh;
+        width: 30vw;
+        margin-bottom: 0;
+    }
+
+    .login-container {
+        width: 25%;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 1.2rem;
+    }
 }
