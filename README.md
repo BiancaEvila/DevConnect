@@ -15,4 +15,5 @@ Layout preparado para futuras validações e integrações com backend
 HTML5: Estruturação do conteúdo da página.
 CSS3: Estilização do layout com foco em design responsivo.
 
-![image](https://github.com/user-attachments/assets/c6dfd46c-8f5c-4d4e-90d0-16be5656a11a)
+
+![DevConnect](https://github.com/user-attachments/assets/9d37530a-18fc-4029-8ebc-520a02065ee4)
