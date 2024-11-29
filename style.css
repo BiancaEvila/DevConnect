@@ -6,26 +6,43 @@
 }
 
 body {
-    background-color: #9b287b; 
+    background-color: #111827; 
     min-height: 100vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 8px;
 }
 
-.login-container {
+#logo {
+    height: 60vh;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 600px;
-    background-color: #FFFFFF;
-    padding: 32px;
+}
+
+img {
+    width: 70%;
+    height: 80%;
+}
+
+.login-container {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #374151;
+    padding: 30px;
     border-radius: 16px;
 }
 
 .login-form {
+    /* border: solid yellow; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,27 +65,49 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #5c164e;
+    color: #fff;
     margin-top: 16px;
 
 }
 
 label {
-    color: #a3a3a3;
+    color: #ffffff;
     font-size: 14px;
     margin-bottom: 8px;
     cursor: default;
 }
 
 input {
-    border: 0;
-    background-color: #e7e3e3;
+    border: 1px solid;
+    transition: border-color 0.3s ease;
+    background-color: #111827;
     padding: 16px;
     border-radius: 16px;
+    color: #ffffff; /* Define a cor padrão do texto */
+    font-size: 16px;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #ffffff !important; /* Força a cor do texto no autofill */
+    -webkit-box-shadow: 0 0 0 1000px #111827 inset !important; /* Sobrescreve o fundo */
+    box-shadow: 0 0 0 1000px #111827 inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    border: 1px solid #ffffff !important;
+}
+
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Cor branca semitransparente */
+}
+  
+
+input:focus {
+    outline: none;
+    border: solid 2px #9333EA;
 }
 
 button {
-    background-color: #9b287b;
+    background-color: #9333EA;
     color: #fff;
     font-size: 20px;
     border: 0;
